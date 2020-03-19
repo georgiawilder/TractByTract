@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Aleo&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <title>TractByTract</title>
+  <style>
+
+     html {
+       scroll-behavior: smooth;
+     }
+
+     html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Fira Sans', sans-serif;
+     }
+
+    #text {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+ 
+  </style>
+
+</head>
+
+<body id="top" style="padding-top: 75px;">
+<nav class="fixed-top navbar-expand-md navbar bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="http://www.tractbytract.com">Tract By Tract</a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="model.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="team.html">The Team</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/georgiawilder/TractByTract">View on Github</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div style="margin-left:10%; margin-right:10%" class="jumbotron">
+  <h1>Our Mission</h1>
+  <p>Help local governments and leaders better allocate resources to increase census turnout rates.</p>
+</div>
+
+<div id="text">
+
+<h3>The Problem</h3>
+<p>The 2020 Census faces the risk of massive undercount, particularly of the populations that need most to be counted.</p>
+<p>Based on anecdotal evidence and selective case studies, the most generally effective mechanism to motivate responses to the Census is the dissemination of true information through the voices of "trusted leaders" in communities.</p>
+<b style="margin-bottom: 30px; font-size:14pt">How can we optimize resources and time during the Census itself to facilitate increased self-response rates?</b>
+<br>
+ 
+<h3 style="margin-top: 30px">The Tract By Tract Solution</h3>
+<p>Tract By Tract uses hierarchical linear regression techniques to establish projected response rates for the 2020 Census during the self-response period, using parameters including:</p>
+<ul style="list-style-position:inside">
+  <li>Age breakdown</li>
+  <li>Race breakdown</li>
+  <li>Education</li>
+  <li>Employment</li>
+  <li>Household structure</li>
+  <li>Broadband access</li>
+  <li>Urbanization</li>
+</ul>
+<p>The dataset we used to train the model is the 2019 planning database that includes 2010 census data and 2013-2017 American Citizenship Survey (ACS) data. To view and use this data, please visit our <a href="https://github.com/georgiawilder/TractByTract">Github</a>.</p>
+<p>We take the difference of the projected rate and the true rate during the self-response period and then, based on this difference, illustrate which tracts are responding above or below their projected levels.</p>
+<h4>
+
+</div>
+
+</body>
